@@ -19,7 +19,9 @@ public partial class MainWindow : Window
 
     private void GetDataFromDataBase()
     {
+        
         Authors.Clear();
+        
         using (SqlConnection connection = new(connectionString))
         {
             SqlDataReader reader = null;
